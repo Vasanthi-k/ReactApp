@@ -3,10 +3,7 @@ on: # bckjsn
 name: simple
 jobs: 
   build:
-    runs-on: 
-      - self-hosted
-      - practice-1
-      - label-1
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
       - name: run a one-line script
