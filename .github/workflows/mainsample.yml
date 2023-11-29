@@ -1,0 +1,15 @@
+on: # bckjsn
+  workflow_dispatch: 
+name: simple
+jobs: 
+  build:
+    runs-on: 
+      - practice-1
+      - label-1
+    steps:
+      - uses: actions/checkout@v2
+      - name: run a one-line script
+        run: |
+          echo hello, World!
+          sleep 15s
+          echo goodbye!
